@@ -38,7 +38,7 @@ public class CarServiceImpl implements CarService{
        return carRepository.findById(id)
                .orElseThrow(() ->{
                    logger.error("Car not found with id{},id");
-                   return new RuntimeException("Car not found  has  with id"+id);
+                   return new RuntimeException("Car not found   with id"+id);
                });
     }
 
